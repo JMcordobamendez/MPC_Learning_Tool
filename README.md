@@ -61,7 +61,7 @@ python3 main.py
 ```
  After some seconds, the tool window will be opened with some default values.
  
-[picture of the initial menu]
+![menu_parts](https://github.com/JMcordobamendez/MPC_Learning_Tool/assets/79694677/4a5e5c4b-4030-4a35-967a-60a89fb9df25)
 
 In the tool window, the "**Model Parameters**" (red square) are configured modifying the tex editor, the user must write a **real number** using "**.**" for decimal point. The saturation of the actuator has an inferior and superior limit that are defined separating them with "**,**".
 
@@ -89,4 +89,4 @@ Inside "**Controller Parameters**" there are 2 types of parameters, one related 
 
 The "Run" button (green square) initializes the simulation, once the simulation is done it is plotted as can be seen in the following Figure:
 
-[insert figure]
+![Last_example](https://github.com/JMcordobamendez/MPC_Learning_Tool/assets/79694677/6eecfe91-50da-4ee5-832c-9cc94921e3b2)
