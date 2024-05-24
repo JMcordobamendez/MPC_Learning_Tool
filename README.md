@@ -55,7 +55,7 @@ pip install matplotlib
   4. Once all the python modules are installed download the files of the repository or clone it.
   5. Type in the terminal "cd /path_till_the_directory/MPC_Learning_Tool".
  ## Tool Manual
-Once the user is inside the "MPC_Learning_Tool" directory with the terminal, to execute the tool type:
+Once the user is inside the "MPC_Learning_Tool" directory with the terminal, to execute the tool, type:
 ```bash
 python3 main.py
 ```
