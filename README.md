@@ -63,7 +63,7 @@ python3 main.py
  
 ![menu_parts](https://github.com/JMcordobamendez/MPC_Learning_Tool/assets/79694677/4a5e5c4b-4030-4a35-967a-60a89fb9df25)
 
-In the tool window, the "**Model Parameters**" (red square) are configured modifying the tex editor, the user must write a **real number** using "**.**" for decimal point. The saturation of the actuator has an inferior and superior limit that are defined separating them with "**,**".
+In the tool window, the "**Model Parameters**" (red square) are configured modifying the text editor, the user must write a **real number** using "**.**" for decimal point. The saturation of the actuator has an inferior and superior limit that are defined separating them with "**,**".
 
 Inside "**Controller Parameters**" there are 2 types of parameters, one related with the "**MPC controller**" (blue square) and other related with the "**Optimization Algorithm**" (orange square) used.
 
