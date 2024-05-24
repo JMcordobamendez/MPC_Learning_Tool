@@ -80,7 +80,7 @@ Inside "**Controller Parameters**" there are 2 types of parameters, one related 
  **Step Decay Learning Rate**
  $$\epsilon(k) =D\cdot\epsilon(k-1) $$
  **Decay**
- $$D = \left (1-\frac{decay(\% )}{100}\right )^{\left(\frac{1}{10
+ $$D = \left (1-\frac{decay_%}{100}\right )^{\left(\frac{1}{10
  }\right)}$$
  **Gradient Descent**
  $$u_{i}(k)=u_{i}(k-1)-\epsilon(k)\cdot\frac{\Delta f}{\Delta u_{i}}$$
