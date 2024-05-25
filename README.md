@@ -31,7 +31,7 @@ pip install pyqtgraph
   ```bash
 pip install matplotlib
  ```
- 5. Once all the python modules are installed download the files of the repository or clone it.
+ 5. Once all the python modules are installed, download the files of the repository or clone it.
  6. Type in the terminal "cd C:\path_till_the_directory\MPC_Learning_Tool".
  
  **Linux:**
@@ -52,7 +52,7 @@ pip install pyqtgraph
   ```bash
 pip install matplotlib
  ```
-  4. Once all the python modules are installed download the files of the repository or clone it.
+  4. Once all the python modules are installed, download the files of the repository or clone it.
   5. Type in the terminal "cd /path_till_the_directory/MPC_Learning_Tool".
  ## Tool Manual
 Once the user is inside the "MPC_Learning_Tool" directory with the terminal, to execute the tool, type:
