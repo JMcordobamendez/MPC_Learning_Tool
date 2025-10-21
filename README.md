@@ -11,6 +11,7 @@ This interactive tool has been developed to help students during the process of 
 The student can modify also the plant parameters (first order SISO system), simulation duration and controller references.
 
 First order SISO system:
+
 $$Y(s) = \frac{K}{\tau\cdot s+1}\cdot U(s)$$
 
 ## Installation Guide
@@ -74,15 +75,24 @@ Inside "**Controller Parameters**" there are 2 types of parameters, one related 
  - **Optimization Algorithm**: The optimization algorithm used has been "**Gradient Descent**". It is an iterative algorithm which numerically converge to a local optimum solution. The main task of the algorithm in MPC is to minimize the error (cost function) between the future references and the predicted output modifying the control action to the plant. So, the algorithm calculates the "optimal" controller action to achieve the references (present and future). The algorithm is (where "h" is the horizon and "k" the actual iteration):
  
  **Cost function**
+ 
  $$f(k) = \sum_{i=1}^{h}\left(Ref_{p}(i)-y_{p}(i)\right )^{2}$$
+ 
  **Gradient**
+ 
  $$\frac{\Delta f}{\Delta u_{i}} = \frac{f(k)-f(k-1)}{u_{i}(k)-u_{i}(k-1)}$$
+ 
  **Step Decay Learning Rate**
+ 
  $$\epsilon(k) =D\cdot\epsilon(k-1) $$
+ 
  **Decay**
+ 
  $$D = \left (1-\frac{decay}{100}\right )^{\left(\frac{1}{10
  }\right)}$$
+ 
  **Gradient Descent**
+ 
  $$u_{i}(k)=u_{i}(k-1)-\epsilon(k)\cdot\frac{\Delta f}{\Delta u_{i}}$$
  
  *The "step decay learning rate" reduces the learning rate value with each iteration to achieve thinner approximation to the "optimal" value. The idea is to begin with "big" learning rates to move faster to the solution and once the algorithm is near the solution, to make smoother the approximation.*
@@ -90,3 +100,4 @@ Inside "**Controller Parameters**" there are 2 types of parameters, one related 
 The "Run" button (green square) initializes the simulation, once the simulation is done it is plotted as can be seen in the following Figure:
 
 ![Last_example](https://github.com/JMcordobamendez/MPC_Learning_Tool/assets/79694677/6eecfe91-50da-4ee5-832c-9cc94921e3b2)
+
